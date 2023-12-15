@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ff6de1c89b.js" crossorigin="anonymous"></script>
+</head>
+<!-------------------------------head bar menu------------------------------------>
+<body>
+    <div id="navbar">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#"><span>B</span>OSS<br></a>  <!--logo name here-->
+                </div>
+                    <ul id="sidemenu">
+                        <li><a href="#navbar">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+        </div>
+    </div>
+ <!---------------------script----------------------->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+ <!---------------------script----------------------->
+
+<!------------------------------------------------------------------------>
+<!----------------------------Blog 1 here--------------------------------->
+    <section class="hero">  
+        <div class="container">
+            <div class="hero-con">
+                 <div class="hero-info">
+                    <h3>Hello</h3>
+                    <p>Hi, My name is <span>Chanon Sareechaithaweepong</span><br> Game Artist form Thailand</p>
+                        <img src="https://static.wixstatic.com/media/680b76_4a0b7736a205453babb30c15a1081939~mv2.png/v1/fill/w_65,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image%20(6).png" alt="">
+                        <img src="https://static.wixstatic.com/media/680b76_657dc8f58b9d4224b812a91dee97a938~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image%20(7).png" alt="">
+                        <img src="https://static.wixstatic.com/media/680b76_0023d6c8c0974decb519b719b176c13a~mv2.png/v1/fill/w_189,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image%20(5).png" alt="">
+                        <a href="images/chanon_resume.pdf" download class="btn">Download CV</a>
+                    </div>
+                <div class="hero-img">
+                    <img src="images/Untitled2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!----------------------------Blog 1 here--------------------------------->
+
+<!----------------------------Blog 2 here-------about--------------------->
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Untitled.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>With experience in making animations and short films and experience from the Video Game Development School, and used to team up with Japanese people to make games for contests.I would like to use these experiences to help develop games that will satisfy people with diverse preferences and meet market demand</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick=" opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick=" opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick=" opentab('education')">Education</p>
+                    <p class="tab-links"onclick=" opentab('achievement')">Achievement</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UX/UI</span><br>UXUI-Web and App interfaces</li>
+                        <li><span>Game Development</span><br>Game Programming/Planning/Designe</li>
+                        <li><span>2D-3DArtists</span><br>Drawing Concept Design Modeling and Animation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Game Development at Garena</li>
+                        <li><span>2015</span><br>Game assets artist at Indie Game Company</li>
+                        <li><span>2015</span><br>Novel illustrations at Palo Publishing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2021</span><br>Game programming form Japan Osaka HALOSAKA College of Technology & Designe</li>
+                        <li><span>2017-2019</span><br>Japanese in the regular course formEhle Institute Japanese Language</li>
+                        <li><span>2013-2017</span><br>Faculty of Industrial Education and Technology, Major subject MediaArt Animation and Visual Effect form King Mongkut's University of Technology Thonburi</li>
+                        <li><span>2002-2013</span><br>Assumption College</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievement">
+                    <ul>
+                        <li><span>2022</span><br>The responsible game won the 2nd and 3rd prizes of the Ministry.(BMG)</li>
+                        <li><span>2021</span><br>Join Game Contest Historia Theme Michi(Road)</li>
+                        <li><span>2021</span><br>Join Japan Game Award Theme Mobius</li>
+                        <li><span>2021</span><br>[2nd place] Win Game Contest HEW(HAL Event Week) Theme Puzzle</li>
+                        <li><span>2020</span><br>Join Game Contest HEW(HAL Event Week) Theme Space shooting</li>
+                        <li><span>2016</span><br>Contest with short 2d animation name [Disorder]</li>
+                        <li><span>2012</span><br>[1st place] Win Animation Contest form YNET BKK of Ministry of Culture</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------script----------------------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tablcontent of tabcontents){
+                tablcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+ <!---------------------script----------------------->
+
+<!----------------------------Blog 2 here-------about--------------------->
+<!------------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Dev</h2>
+                <p>4 years Game Development and contest experience. Responsible for - Game programming, Game design, Game Planning</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pager"></i>
+                <h2>UX/UI</h2>
+                <p>UX/UI experience for Game, Web and App interfaces</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-id-card-clip"></i>
+                <h2>2D-3DArtists</h2>
+                <p>Responsible for Animator, Game Asset artist ,Illustrator</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------sevices------------>
+
+<!------------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://static.wixstatic.com/media/680b76_ec34d6cfaa074e4c80e6824ed5128752~mv2.jpg/v1/fill/w_286,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/image%20(3)_edited.jpg" alt="">
+                <div class="layer">
+                    <h3>Game</h3>
+                    <p>?</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://static.wixstatic.com/media/680b76_adf1505e408c4027919cbff1fc830ed9~mv2.png/v1/crop/x_274,y_0,w_1428,h_1080/fill/w_286,h_216,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image%20(1).png" alt="">
+                <div class="layer">
+                    <h3>CG</h3>
+                    <p>a</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://static.wixstatic.com/media/680b76_f10bb8c894534d16b700d6e0eddba127~mv2.jpg/v1/crop/x_232,y_0,w_917,h_692/fill/w_286,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/image%20(2)_edited.jpg" alt="">
+                <div class="layer">
+                    <h3>UX/UI</h3>
+                    <p>im?</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------portfolio------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bosschaii@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+66-92-8175-777</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ChaBoss1994/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Cha_S_1994"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://t.co/ngsgLvFwvu"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/chanon-s-boss/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <botton type="submit" class="btn btn2">Submit</botton>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Chanon.</p>
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2gUdj2pdTHqCfO-nOc7i9l7c_KNmLNHNhBmeE02w/dev'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
